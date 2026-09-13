@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { 
-  Cpu, 
-  Bot, 
-  Globe, 
-  Rocket, 
-  Server, 
-  Sparkles, 
-  Check, 
-  ArrowRight, 
-  Mail, 
+import {
+  Cpu,
+  Bot,
+  Globe,
+  Rocket,
+  Server,
+  Sparkles,
+  Check,
+  ArrowRight,
+  Mail,
   X,
   ExternalLink
 } from 'lucide-react';
@@ -41,7 +41,7 @@ export const Services: React.FC = () => {
   return (
     <section id="services" className="py-24 relative bg-dark-900/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3 text-left max-w-2xl">
@@ -49,10 +49,10 @@ export const Services: React.FC = () => {
               <span>// 02. SERVICES &amp; FREELANCE OFFERINGS</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
-              Specialized engineering for founders &amp; teams.
+              Services &amp; Freelance Offerings
             </h2>
             <p className="text-slate-400 text-base leading-relaxed">
-              Available for freelance engagements, custom MVPs, AI agent workflows, and architecture consulting. 
+              Available for freelance engagements, custom MVPs, AI agent workflows, and architecture consulting.
               Delivering clean, robust solutions tailored to your operational goals.
             </p>
           </div>
@@ -63,7 +63,7 @@ export const Services: React.FC = () => {
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-dark-950 font-semibold text-xs transition-all shadow-md shadow-cyan-500/20"
             >
               <Mail className="w-4 h-4" />
-              <span>Discuss a Project</span>
+              <span>Reach out to email for services!</span>
             </a>
           </div>
         </div>
@@ -73,9 +73,8 @@ export const Services: React.FC = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className={`glass-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${
-                service.featured ? 'border-cyan-500/30 shadow-lg shadow-cyan-500/5' : ''
-              }`}
+              className={`glass-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${service.featured ? 'border-cyan-500/30 shadow-lg shadow-cyan-500/5' : ''
+                }`}
             >
               {service.featured && (
                 <div className="absolute top-0 right-0">

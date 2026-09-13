@@ -64,7 +64,7 @@ export interface ProjectItem {
   id: string;
   title: string;
   subtitle: string;
-  category: 'AI & LLMs' | 'Automation & MCP' | 'Full-Stack & Systems' | 'Developer Tools';
+  category: 'AI & LLMs' | 'Automation & MCP' | 'Full-Stack & Systems';
   description: string;
   highlights: string[];
   architecture?: string;

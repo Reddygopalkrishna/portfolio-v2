@@ -16,16 +16,16 @@ export const metricsData: MetricItem[] = [
   },
   {
     label: "Engineering Experience",
-    value: "2+",
+    value: "3+",
     suffix: "Years",
     sublabel: "Tavant, Wipro, Indian Servers",
     iconName: "Briefcase"
   },
   {
-    label: "AI Systems & Builds",
-    value: "6+",
+    label: "AI Systems & Websites",
+    value: "10+",
     suffix: "Shipped",
-    sublabel: "MCP, RAG, Multi-Agents",
+    sublabel: "MCPs,AI Automations, Websites, Portfolio's",
     iconName: "Terminal"
   }
 ];

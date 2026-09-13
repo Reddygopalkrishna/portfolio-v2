@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { 
-  ExternalLink, 
-  Layers, 
-  CheckCircle2, 
-  ArrowUpRight, 
+import {
+  ExternalLink,
+  Layers,
+  CheckCircle2,
+  ArrowUpRight,
   Sparkles,
   GitBranch,
   Cpu
@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-24 relative bg-dark-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3 text-left max-w-3xl">
@@ -38,10 +38,10 @@ export const Projects: React.FC = () => {
               <span>// 04. FEATURED SYSTEMS &amp; BUILDS</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
-              Production AI pipelines &amp; developer tooling.
+              Projects
             </h2>
             <p className="text-slate-400 text-base leading-relaxed">
-              Real-world systems engineered for low latency, zero telemetry leakage, AST knowledge graphs, and autonomous multi-agent loops.
+              Real-world systems engineered production ready products
             </p>
           </div>
 
@@ -51,11 +51,10 @@ export const Projects: React.FC = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-medium transition-all ${
-                  activeCategory === cat
-                    ? 'bg-cyan-500 text-dark-950 font-semibold shadow-md shadow-cyan-500/20'
-                    : 'bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/5'
-                }`}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-medium transition-all ${activeCategory === cat
+                  ? 'bg-cyan-500 text-dark-950 font-semibold shadow-md shadow-cyan-500/20'
+                  : 'bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/5'
+                  }`}
               >
                 {cat}
               </button>
@@ -68,12 +67,11 @@ export const Projects: React.FC = () => {
           {filteredProjects.map((project: ProjectItem) => (
             <div
               key={project.id}
-              className={`glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${
-                project.featured ? 'border-cyan-500/30' : ''
-              }`}
+              className={`glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-300 ${project.featured ? 'border-cyan-500/30' : ''
+                }`}
             >
               <div className="space-y-5">
-                
+
                 {/* Header: Category + Metrics Badge */}
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-xs font-mono-code text-cyan-400 font-semibold px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20">

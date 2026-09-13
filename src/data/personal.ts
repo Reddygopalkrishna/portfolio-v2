@@ -19,7 +19,7 @@ export const personalInfo: PersonalInfo = {
   },
   emails: {
     primary: "reddygopalkrishna06@gmail.com",
-    secondary: "reddygopalkrishna8@gmail.com"
+    secondary: "reddygopalkrishna06@gmail.com"
   },
   socials: {
     linkedin: "https://www.linkedin.com/in/reddy-gopal-krishna-55242022b/",
@@ -30,7 +30,7 @@ export const personalInfo: PersonalInfo = {
   stats: {
     followers: "8,000+",
     connections: "500+",
-    experience: "2+ Years",
+    experience: "3+ Years",
     certifications: "10 Certified",
     projectsCompleted: "12+ Delivered"
   },

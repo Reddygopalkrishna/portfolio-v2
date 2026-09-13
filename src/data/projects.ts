@@ -2,106 +2,66 @@ import { ProjectItem } from '../types';
 
 export const projectsData: ProjectItem[] = [
   {
-    id: "zerodha-kite-mcp",
-    title: "Zerodha Kite MCP Server for Claude",
-    subtitle: "Real-time Stock Trading & Portfolio Intelligence via Model Context Protocol",
-    category: "Automation & MCP",
-    description: "An enterprise-grade Model Context Protocol (MCP) server bridging Anthropic's Claude Desktop and Claude Code with Zerodha's Kite Connect API, enabling conversational portfolio analysis and risk management without external credential leakage.",
-    architecture: "Claude Desktop / Code ──(MCP Protocol / JSON-RPC)──> Kite MCP Server ──(HTTPS / HMAC)──> Zerodha Kite API",
-    highlights: [
-      "Enables Claude to securely query real-time stock holdings, live LTP, margins, P&L calculations, and open orders.",
-      "Strict zero-data-retention security model: API secrets stay in local environment variables with zero telemetry.",
-      "Implements dynamic tool throttling, automatic session token caching, and automated error recovery."
-    ],
-    technologies: ["Anthropic MCP", "TypeScript", "Node.js", "Kite Connect API", "JSON-RPC", "OAuth2"],
-    metrics: "Sub-200ms latency on portfolio queries",
-    githubUrl: "https://github.com/Reddygopalkrishna",
-    liveUrl: "https://www.linkedin.com/in/reddy-gopal-krishna-55242022b/",
-    featured: true
-  },
-  {
-    id: "rag-evaluation-harness",
-    title: "Transparent RAG Pipeline & Evaluation Harness",
-    subtitle: "Enterprise Knowledge Base with Similarity Thresholding & Chunk Benchmarking",
+    id: "defect-spotter",
+    title: "DefectSpotter",
+    subtitle: "AI-Powered Property Damage Detection & Inspection Reporting",
     category: "AI & LLMs",
-    description: "A 4-stage transparent Retrieval-Augmented Generation (RAG) pipeline built to index complex enterprise documentation, eliminate LLM hallucinations, and benchmark optimal chunking configurations across heterogeneous document corpora.",
-    architecture: "Query ──> [Query Embedding] ──> [Cosine Vector Search] ──> [Similarity Threshold Gate] ──> [Context Assembler] ──> [LLM Generation]",
+    description:
+      "A browser-based visual inspection platform that analyzes live camera, screen, file, and video inputs with Google Gemini to identify property defects, classify severity, and create documented inspection reports.",
+    architecture:
+      "Camera / Screen / Video Input ──> React + TypeScript Client ──> Gemini Live API ──> Detection Processing ──> Zustand Store ──> PDF Inspection Report",
     highlights: [
-      "Rigid similarity threshold gating: answers are gracefully rejected or flagged when vector retrieval similarity falls below confidence bounds.",
-      "Automated evaluation benchmark comparing fixed vs. semantic chunking strategies across token densities.",
-      "Built with an Express.js backend and vector embeddings cache to guarantee sub-second semantic retrieval."
+      "Detects visible structural, water, mold, electrical, surface, and fixture-related damage with bounding boxes, confidence scores, and severity classifications.",
+      "Uses temporal detection tracking, duplicate filtering, and non-maximum suppression to reduce repeated visual findings.",
+      "Generates downloadable PDF inspection reports with risk level, repair recommendations, estimated cost ranges, and defect details.",
+      "Includes a forensic-investigation mode for evidence logging, authenticity alerts, and chain-of-custody records."
     ],
-    technologies: ["OpenAI Embeddings", "Express.js", "Vector DB", "TypeScript", "Python", "Cosine Similarity"],
-    metrics: "Zero hallucination rate on out-of-domain queries",
-    githubUrl: "https://github.com/Reddygopalkrishna",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Google Gemini Live API",
+      "WebSocket",
+      "jsPDF"
+    ],
+    metrics: "Configurable live-frame analysis workflow with 2 FPS capture",
+    githubUrl: "https://github.com/Reddygopalkrishna/defect_spotter",
     featured: true
   },
   {
-    id: "realtime-voice-assistant",
-    title: "Sub-Second Real-Time Voice Assistant Pipeline",
-    subtitle: "Multi-Stage Audio Pipeline over WebSockets with VAD & Ultra-Low Latency",
-    category: "AI & LLMs",
-    description: "An open-source, 4-stage streaming voice intelligence pipeline integrating Voice Activity Detection (VAD), speech recognition, LLM reasoning, and neural text-to-speech with natural conversational interruptions.",
-    architecture: "Mic Audio ──(VAD Filter)──> STT (NVIDIA Parakeet TDT) ──> LLM Stream ──> TTS (Qwen3-TTS) ──> Audio Out",
-    highlights: [
-      "End-to-end full duplex streaming over WebSockets implementing the OpenAI Realtime protocol specification.",
-      "Barge-in capability: instantly cuts synthesized speech playback the moment user voice activity is detected by Silero VAD.",
-      "Engineered for sub-800ms speech-to-speech turnaround times."
-    ],
-    technologies: ["WebSockets", "NVIDIA Parakeet", "Qwen3-TTS", "Silero VAD", "Python", "FastAPI", "WebRTC"],
-    metrics: "<800ms End-to-End Voice Latency",
-    githubUrl: "https://github.com/Reddygopalkrishna",
-    featured: true
-  },
-  {
-    id: "ai-coding-agent-platform",
-    title: "AI Coding Agent Collaboration Platform",
-    subtitle: "Self-Hosted Multi-Agent Orchestration with Shared Memory & SOP Generation",
-    category: "Automation & MCP",
-    description: "A collaborative multi-agent development environment combining Alook orchestration and Claude Code to autonomously execute end-to-end coding tasks with verification feedback loops.",
-    architecture: "Task Dispatcher ──> Planner Agent ──> Code Writer Agent ──> Test Runner Agent ──> Shared Vector Memory",
-    highlights: [
-      "Autonomous delegation between architect, coder, and test executor subagents with strict exit criteria.",
-      "Shared persistent memory layer preventing duplicate research steps across long-running developer sessions.",
-      "Auto-generates self-learning Standard Operating Procedures (SOPs) based on resolved build and test failures."
-    ],
-    technologies: ["Claude Code", "Multi-Agent Systems", "Python", "TypeScript", "SQLite", "Git Automation"],
-    metrics: "4x Acceleration in automated bug refactoring",
-    githubUrl: "https://github.com/Reddygopalkrishna",
-    featured: false
-  },
-  {
-    id: "code-review-graph",
-    title: "code-review-graph: Tree-Sitter Blast Radius Analyzer",
-    subtitle: "Knowledge-Graph Developer Tool for AI Review Agents across 23 Languages",
-    category: "Developer Tools",
-    description: "A developer tool that parses codebase ASTs using Tree-Sitter into an in-memory knowledge graph. It calculates the exact blast radius of git diffs to supply AI code reviewers with only the impacted call graphs, slashing token consumption dramatically.",
-    architecture: "Git Diff ──> Tree-Sitter AST ──> Graph Dependency Engine ──> Pruned Context ──> AI Review Agent",
-    highlights: [
-      "Reduces AI code review token consumption by 6.8x to 49x by feeding targeted symbol graphs instead of whole files.",
-      "Full multilingual support for 23 programming languages including TypeScript, Python, Go, and Rust.",
-      "Seamlessly integrates into CI/CD pipelines as a pre-commit check or GitHub Action."
-    ],
-    technologies: ["Tree-Sitter", "Knowledge Graphs", "Rust", "TypeScript", "GitHub Actions", "AST Parsing"],
-    metrics: "Up to 49x Token Reduction per PR",
-    githubUrl: "https://github.com/Reddygopalkrishna",
-    featured: true
-  },
-  {
-    id: "loop-engineering-architecture",
-    title: "Loop Engineering Architecture",
-    subtitle: "State-Memory Autonomous Systems Replacing Raw Prompt Engineering",
+    id: "nodetalk-chat-app",
+    title: "NodeTalk",
+    subtitle: "Full-Stack Real-Time Chat Application",
     category: "Full-Stack & Systems",
-    description: "An autonomous execution framework that shifts software engineering with AI from fragile single-shot prompts to durable state machines, priority scheduler queues, and dual-pass independent verification gates.",
-    architecture: "Trigger ──> State Machine Scheduler ──> Execution Worker ──> Independent Verifier ──> Final Commit",
+    description:
+      "A responsive MERN chat application that supports authenticated one-to-one messaging, real-time online presence, profile management, and image sharing.",
+    architecture:
+      "React + Zustand Client ──(REST / Socket.io)──> Express & Node.js API ──> MongoDB ──> Cloudinary Image Storage",
     highlights: [
-      "Durable state persistence allowing complex multi-hour jobs to resume cleanly after system interruptions.",
-      "Dual-pass verification: independent validator agents check ASTs and unit test passes before state commits.",
-      "Significantly outperforms traditional single-agent chain-of-thought on complex refactoring benchmarks."
+      "Delivers real-time incoming messages and online-user presence through Socket.io.",
+      "Implements sign-up, login, logout, and protected routes using JWT authentication, HTTP-only cookies, and bcrypt password hashing.",
+      "Supports image attachments in messages and profile-photo uploads through Cloudinary.",
+      "Provides responsive chat, contact filtering, loading states, theme settings, and toast-based error feedback."
     ],
-    technologies: ["State Machines", "TypeScript", "Node.js", "Redis Queues", "Jest", "Microservices"],
-    metrics: "99.2% Task Completion Reliability",
-    githubUrl: "https://github.com/Reddygopalkrishna",
-    featured: false
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Socket.io",
+      "Zustand",
+      "JWT",
+      "Cloudinary",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Vite"
+    ],
+    metrics: "Real-time one-to-one message delivery and online-presence updates",
+    githubUrl: "https://github.com/Reddygopalkrishna/NodeTalk-Chat-App",
+    liveUrl: "https://nodetalk-chat-app.onrender.com/login",
+    featured: true
   }
 ];
