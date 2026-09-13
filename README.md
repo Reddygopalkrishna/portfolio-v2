@@ -1,7 +1,6 @@
 # Reddy Gopal Krishna — Personal Portfolio Website
 
-A high-performance, responsive personal portfolio website engineered with **React 19**, **Vite**, **TypeScript**, and **Tailwind CSS**. Designed with a modern, sleek dark engineering aesthetic inspired by [ganeshbodakhe.netlify.app](https://ganeshbodakhe.netlify.app/).
-
+A high-performance, responsive personal portfolio website engineered with **React 19**, **Vite**, **TypeScript**, and **Tailwind CSS**. Designed with a modern, sleek dark engineering aesthetic.
 ---
 
 ## 📁 100% Modular Data Files (`src/data/`)
