@@ -12,8 +12,8 @@ export const skillsData: SkillCategory[] = [
       { name: "OpenAI APIs & Assistants", level: "Expert", featured: true, tag: "LLMs" },
       { name: "Multi-Agent Orchestration", level: "Advanced", featured: true, tag: "Architecture" },
       { name: "RAG & Vector Search", level: "Advanced", featured: true, tag: "Retrieval" },
-      { name: "Prompt Engineering & Guardrails", level: "Expert", featured: false },
-      { name: "NLP & Tokenization", level: "Advanced", featured: false }
+      { name: "Prompt Engineering & Guardrails", level: "Expert", featured: true },
+      { name: "NLP & Tokenization", level: "Advanced", featured: true }
     ]
   },
   {
@@ -30,6 +30,21 @@ export const skillsData: SkillCategory[] = [
     ]
   },
   {
+    category: "Programming Languages",
+    description: "Core programming languages for web platforms, system scripts, data crunching, and ML.",
+    iconName: "Code2",
+    skills: [
+      { name: "JavaScript (ESNext)", level: "Expert", featured: true, tag: "Certified" },
+      { name: "TypeScript", level: "Expert", featured: true, tag: "Preferred" },
+      { name: "Python", level: "Expert", featured: true, tag: "ML/Backend" },
+      { name: "Go (Golang)", level: "Proficient", featured: false },
+      { name: "SQL (PostgreSQL/MySQL)", level: "Advanced", featured: true },
+      { name: "MongoDB", level: "Advanced", featured: true },
+      { name: "R", level: "Proficient", featured: false },
+      { name: "HTML5 / Modern CSS3", level: "Expert", featured: true, tag: "Certified" }
+    ]
+  },
+  {
     category: "Frontend Development",
     description: "High-performance reactive user interfaces, component design systems, and responsive web apps.",
     iconName: "Layout",
@@ -37,11 +52,11 @@ export const skillsData: SkillCategory[] = [
       { name: "React.js", level: "Expert", featured: true, tag: "Certified" },
       { name: "Next.js", level: "Advanced", featured: true, tag: "SSR/SSG" },
       { name: "TypeScript", level: "Expert", featured: true, tag: "Standard" },
-      { name: "Tailwind CSS", level: "Expert", featured: true, tag: "Styling" },
-      { name: "Redux Toolkit & Zustand", level: "Expert", featured: false },
-      { name: "Vue.js & Pinia", level: "Proficient", featured: false },
-      { name: "TanStack Query", level: "Advanced", featured: false },
-      { name: "ShadCN UI & Framer Motion", level: "Advanced", featured: false },
+      { name: "Tailwind CSS/MUI", level: "Expert", featured: true, tag: "Styling" },
+      { name: "Redux Toolkit & Zustand", level: "Expert", featured: true },
+      { name: "Vue.js & Pinia", level: "Proficient", featured: true },
+      { name: "TanStack Query", level: "Advanced", featured: true },
+      { name: "ShadCN UI & Framer Motion", level: "Advanced", featured: true },
       { name: "Responsive Web Design", level: "Expert", featured: true, tag: "Certified" }
     ]
   },
@@ -55,23 +70,10 @@ export const skillsData: SkillCategory[] = [
       { name: "RESTful API Architecture", level: "Expert", featured: true },
       { name: "WebSockets & Streaming", level: "Advanced", featured: true },
       { name: "Django & Python APIs", level: "Advanced", featured: false },
-      { name: "GraphQL", level: "Proficient", featured: false },
-      { name: "Supabase & Serverless", level: "Advanced", featured: false },
-      { name: "Microservices Architecture", level: "Advanced", featured: false }
-    ]
-  },
-  {
-    category: "Languages",
-    description: "Core programming languages for web platforms, system scripts, data crunching, and ML.",
-    iconName: "Code2",
-    skills: [
-      { name: "JavaScript (ESNext)", level: "Expert", featured: true, tag: "Certified" },
-      { name: "TypeScript", level: "Expert", featured: true, tag: "Preferred" },
-      { name: "Python", level: "Expert", featured: true, tag: "ML/Backend" },
-      { name: "Go (Golang)", level: "Proficient", featured: false },
-      { name: "SQL (PostgreSQL/MySQL)", level: "Advanced", featured: false },
-      { name: "R", level: "Proficient", featured: false },
-      { name: "HTML5 / Modern CSS3", level: "Expert", featured: true, tag: "Certified" }
+      { name: "GraphQL", level: "Proficient", featured: true },
+      { name: "Supabase & Serverless", level: "Advanced", featured: true },
+      { name: "Firebase", level: "Advanced", featured: true },
+      { name: "Microservices Architecture", level: "Advanced", featured: true }
     ]
   },
   {
@@ -83,9 +85,7 @@ export const skillsData: SkillCategory[] = [
       { name: "MongoDB", level: "Advanced", featured: true },
       { name: "MySQL", level: "Advanced", featured: false },
       { name: "Redis Caching", level: "Advanced", featured: false },
-      { name: "Vector Databases", level: "Advanced", featured: true, tag: "AI" },
-      { name: "SAP GRN Logistics", level: "Proficient", featured: false, tag: "Enterprise" }
-    ]
+      { name: "Vector Databases", level: "Advanced", featured: true, tag: "AI" },]
   },
   {
     category: "Cloud, DevOps & Tools",
@@ -109,7 +109,7 @@ export const skillsData: SkillCategory[] = [
       { name: "React Testing Library (RTL)", level: "Expert", featured: true },
       { name: "Vitest", level: "Advanced", featured: false },
       { name: "Playwright", level: "Advanced", featured: true },
-      { name: "Cypress", level: "Advanced", featured: false },
+      { name: "Cypress", level: "Advanced", featured: true },
       { name: "Agile & SDLC", level: "Expert", featured: false, tag: "Certified" }
     ]
   }

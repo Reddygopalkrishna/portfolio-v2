@@ -10,50 +10,35 @@ export const experienceData: ExperienceItem[] = [
     duration: "Present",
     location: "Bengaluru, Karnataka, India",
     locationType: "On-site",
-    description: "Developing scalable enterprise software solutions, modern web platforms, and intelligent automated workflows.",
+    description: "Developing scalable enterprise software solutions, modern web applications",
+    accomplishments: [
+      "Architecting and delivering high-performance enterprise web applications using Vue.js and React.",
+      "Migrated legacy ASP.Net (MVC) + Angularjs code to modern Vue 3 + Vite framework, resulted in 30% improvement in performance and 20% reduction in code complexity.",
+      "Worked on SSO authentication workflow end-to-end configuration with all IDP Okta,Azure AD ,Auth0,keycloak,Google IdP etc",
+      "Implemented modern authentication flows using OAuth2 and JWT tokens.",
+      "Integrated with REST APIs and GraphQL endpoints to fetch and display data.",
+      "Optimized application performance by implementing lazy loading and code splitting."
+    ],
+    skills: ["React", "VueJS", "Javascript", "JQuery", "TypeScript", "Redux", "Pinia", "Vite", "TailwindCSS", "SCSS", "Node.js", "REST APIs", "Git", "OAuth2", "JWT tokens", "GraphQL"],
+    current: true
+  },
+  {
+    id: "wipro-assoc",
+    role: "Associate Software Engineer",
+    company: "Wipro",
+    type: "Full-time",
+    period: "Nov 2023 — Dec 2025",
+    duration: "2 yrs",
+    location: "Bengaluru, Karnataka, India",
+    locationType: "On-site",
+    description: "Full-stack development, feature delivery, bug triaging, and unit testing within enterprise project teams.",
     accomplishments: [
       "Engineering full-stack web applications and robust microservices designed for high availability and enterprise scale.",
       "Collaborating with cross-functional teams to architect clean, maintainable modular codebases with strict test coverage.",
       "Integrating cutting-edge AI and automation toolchains to optimize development velocity and production reliability.",
       "Optimizing client-side rendering pipelines and API payloads to ensure sub-second response times."
     ],
-    skills: ["React", "TypeScript", "Node.js", "REST APIs", "Microservices", "Docker", "AWS", "Git"],
-    current: true
-  },
-  {
-    id: "wipro-sr-assoc",
-    role: "Senior Associate",
-    company: "Wipro",
-    type: "Full-time",
-    period: "Sep 2025 — Dec 2025",
-    duration: "4 mos",
-    location: "Bengaluru, Karnataka, India",
-    locationType: "On-site",
-    description: "Advanced engineering role handling technical requirements, software delivery, and application resilience.",
-    accomplishments: [
-      "Promoted to Senior Associate following strong delivery on customer-facing digital applications and stability metrics.",
-      "Mentored junior engineers on frontend architecture patterns, state management best practices, and code review standards.",
-      "Drove performance profiling and bug resolution across distributed systems, cutting defect resolution cycles."
-    ],
-    skills: ["React", "JavaScript", "TypeScript", "REST APIs", "Agile Methodologies", "Debugging", "Code Review"]
-  },
-  {
-    id: "wipro-assoc",
-    role: "Associate",
-    company: "Wipro",
-    type: "Full-time",
-    period: "Nov 2023 — Sep 2025",
-    duration: "1 yr 11 mos",
-    location: "Bengaluru, Karnataka, India",
-    locationType: "On-site",
-    description: "Full-stack development, feature delivery, bug triaging, and unit testing within enterprise project teams.",
-    accomplishments: [
-      "Developed responsive frontend modules with React, Redux, and modern CSS frameworks adhering to strict accessibility standards.",
-      "Built and tested RESTful API endpoints and data service integrations connecting to backend relational databases.",
-      "Authored comprehensive test suites with Jest and React Testing Library, maintaining high coverage across critical paths.",
-      "Actively participated in Agile ceremonies, sprint planning, and CI/CD deployment workflows."
-    ],
-    skills: ["React.js", "Redux", "JavaScript", "HTML5/CSS3", "Jest", "Git", "SDLC", "Agile"]
+    skills: ["React.js", "NextJS", "GraphQL", "Redux", "JavaScript", "TypeScript", "Node.js", "Express.js", "REST APIs", "Microservices", "CI/CD", "Docker", "AWS", "Git", "HTML5/CSS3", "Jest", "Git", "SDLC", "Agile"]
   },
   {
     id: "indian-servers",
@@ -71,7 +56,7 @@ export const experienceData: ExperienceItem[] = [
       "Gained hands-on experience deploying YOLOv8 for real-time object detection and OpenCV computer vision pipelines.",
       "Conducted extensive model performance evaluations comparing tokenization techniques and latency benchmarks."
     ],
-    skills: ["Python", "TensorFlow", "NLP", "LLMs", "YOLOv8", "OpenCV", "NumPy", "Pandas", "Matplotlib"]
+    skills: ["Python", "LLMs", "AI Agents", "TensorFlow", "NLP", "RAG", "YOLOv8", "OpenCV", "NumPy", "Pandas", "Matplotlib"]
   },
   {
     id: "cognizant",
@@ -91,21 +76,5 @@ export const experienceData: ExperienceItem[] = [
     ],
     skills: ["SDLC", "Agile Delivery", "Requirements Analysis", "Workflow Architecture", "QA Testing"]
   },
-  {
-    id: "reliance-retail",
-    role: "Account Executive & CSA",
-    company: "Reliance Retail",
-    type: "Part-time (Concurrent with Studies)",
-    period: "Feb 2022 — Aug 2022",
-    duration: "7 mos",
-    location: "Kadapa, Andhra Pradesh, India",
-    locationType: "On-site",
-    description: "Managed SAP inventory logistics, Goods Receipt Notes (GRN), and operational stock coordination.",
-    accomplishments: [
-      "Processed Goods Receipt Notes (GRN) within SAP, tracking inward and outward inventory with 99%+ record fidelity.",
-      "Reconciled supplier purchase orders against actual physical shipments, identifying discrepancies proactively.",
-      "Collaborated with cross-functional warehouse and floor teams to streamline logistics and minimize inventory shrinkage."
-    ],
-    skills: ["SAP GRN", "Inventory Management", "Logistics Operations", "ERP Systems", "Data Reconciliation"]
-  }
+
 ];
